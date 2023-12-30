@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Built files
+dist/
+
+# TypeScript build output
+*.js
+*.js.map
