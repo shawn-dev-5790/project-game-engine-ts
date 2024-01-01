@@ -1,0 +1,52 @@
+[
+  {
+    "images_warrior_attack_1": 0,
+    "name": "images_warrior_attack_1",
+    "path": "/images/warrior/attack_1.png"
+  },
+  {
+    "images_warrior_attack_2": 1,
+    "name": "images_warrior_attack_2",
+    "path": "/images/warrior/attack_2.png"
+  },
+  {
+    "images_warrior_attack_3": 2,
+    "name": "images_warrior_attack_3",
+    "path": "/images/warrior/attack_3.png"
+  },
+  {
+    "images_warrior_dead": 3,
+    "name": "images_warrior_dead",
+    "path": "/images/warrior/dead.png"
+  },
+  {
+    "images_warrior_hurt": 4,
+    "name": "images_warrior_hurt",
+    "path": "/images/warrior/hurt.png"
+  },
+  {
+    "images_warrior_idle": 5,
+    "name": "images_warrior_idle",
+    "path": "/images/warrior/idle.png"
+  },
+  {
+    "images_warrior_jump": 6,
+    "name": "images_warrior_jump",
+    "path": "/images/warrior/jump.png"
+  },
+  {
+    "images_warrior_run+attack": 7,
+    "name": "images_warrior_run+attack",
+    "path": "/images/warrior/run+attack.png"
+  },
+  {
+    "images_warrior_run": 8,
+    "name": "images_warrior_run",
+    "path": "/images/warrior/run.png"
+  },
+  {
+    "images_warrior_walk": 9,
+    "name": "images_warrior_walk",
+    "path": "/images/warrior/walk.png"
+  }
+]

@@ -9,11 +9,11 @@ export default class GameLoop {
   private calc: Time;
   private dummys: Dummy[];
 
-  constructor(canvas: HTMLCanvasElement) {
+  constructor(canvas: HTMLCanvasElement, fps: number, speed: number) {
     this.running = false;
     this.screen = new Renderer(canvas.getContext("2d")!);
-    this.draw = new Time(60, 1);
-    this.calc = new Time(1, 6);
+    this.draw = new Time(fps, 1);
+    this.calc = new Time(1, speed);
     this.dummys = [new Dummy()];
   }
 
@@ -35,16 +35,17 @@ export default class GameLoop {
 
     // 게임 로직 업데이트
     this.calc.update(performance.now(), [
-      () => console.log("%cupdated", "color: white; background: blue;"),
+      // () => console.log("%cupdated", "color: white; background: blue;"),
       (delta: number) =>
         this.dummys.forEach((obj) => obj.update(delta / this.calc.tick)),
     ]);
 
     // 랜더링 프레임 업데이트
     this.draw.update(frame, [
-      () => console.log("%crendered", "color: black; background: gold;"),
+      // () => console.log("%crendered", "color: black; background: gold;"),
       () => this.screen.clear(),
-      () => this.dummys.forEach((obj) => obj.render(this.screen)),
+      (delta: number) =>
+        this.dummys.forEach((obj) => obj.render(delta, this.screen)),
     ]);
 
     requestAnimationFrame((frame) => this.loop(frame));

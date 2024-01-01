@@ -1,8 +1,8 @@
 import Renderer from "./Renderer";
 
 abstract class AbsGameObject {
-  abstract update(deltaTime: number): void;
-  abstract render(renderer: Renderer): void;
+  abstract update(delta: number): void;
+  abstract render(delta: number, ctx: Renderer): void;
 }
 
 export default AbsGameObject;
