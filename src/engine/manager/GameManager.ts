@@ -12,6 +12,9 @@ class GameManager {
   public stop() {
     this.gameLoop?.stop();
   }
+  public isRunning(): boolean {
+    return !!this.gameLoop?.isRunning;
+  }
 }
 
 // exec

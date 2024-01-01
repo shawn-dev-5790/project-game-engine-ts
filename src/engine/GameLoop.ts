@@ -17,6 +17,10 @@ export default class GameLoop {
     this.dummys = [new Dummy()];
   }
 
+  public get isRunning() {
+    return this.running;
+  }
+
   public start(): void {
     if (this.running) return;
     this.running = true;

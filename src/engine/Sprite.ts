@@ -21,7 +21,6 @@ class Sprite {
 
   public animate(delta: number): void {
     this.elapsed += delta;
-    console.log(delta, this.elapsed);
 
     if (this.elapsed < this.duration) return;
     this.elapsed = 0;
