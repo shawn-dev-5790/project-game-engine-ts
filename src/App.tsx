@@ -22,7 +22,8 @@ export default function App() {
       }
 
       timer = setTimeout(() => {
-        game.init(document.getElementById("screen") as HTMLCanvasElement);
+        const canvas = document.getElementById("screen") as HTMLCanvasElement;
+        game.init(canvas, 60, 20);
         clearTimeout(timer);
       }, 2000);
     }

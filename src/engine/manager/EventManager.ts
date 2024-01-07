@@ -1,4 +1,6 @@
 enum EEventName {
+  preload = "preload",
+  ready = "ready",
   watch = "watch",
   start = "start",
   stop = "stop",
