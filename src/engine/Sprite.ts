@@ -22,7 +22,7 @@ class Sprite {
   public animate(delta: number): void {
     this.elapsed += delta;
 
-    if (this.elapsed < this.duration) return;
+    if (this.elapsed < this.duration / this.frames.length) return;
     this.elapsed = 0;
 
     if (this.frameIdx === this.frames.length - 1) {

@@ -1,6 +1,7 @@
 import Dummy from "../entity/Dummy";
 import Renderer from "./Renderer";
 import Time from "./Time";
+import EventManager from "./manager/EventManager";
 
 export default class GameLoop {
   private running: boolean;
@@ -42,6 +43,7 @@ export default class GameLoop {
       // () => console.log("%cupdated", "color: white; background: blue;"),
       (delta: number) =>
         this.dummys.forEach((obj) => obj.update(delta / this.calc.tick)),
+      (delta: number) => EventManager.emit("watch", delta),
     ]);
 
     // 랜더링 프레임 업데이트

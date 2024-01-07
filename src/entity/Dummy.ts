@@ -12,12 +12,12 @@ const entityDummyRigidbody = new Rigidbody(
 const entityDummySpriteIdle = new Sprite(
   96,
   96,
-  300 / 6, // 300ms 동안 프레임 6개 전환 = 기본 duration
+  300, // 300ms 동안 프레임 6개 전환 = 기본 duration
   Array.from({ length: 6 }, (_, i) => [i, 0])
 );
 const entityDummy = {
-  width: 300,
-  height: 300,
+  width: 100,
+  height: 100,
 };
 
 class Dummy extends AbsGameObject {
