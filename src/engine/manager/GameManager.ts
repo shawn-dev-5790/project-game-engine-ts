@@ -23,6 +23,22 @@ class GameManager {
   }
 
   /**
+   * 게임 루프의 준비 여부를 확인합니다.
+   * @returns {boolean} 게임 루프의 준비 여부
+   */
+  public get isReady(): boolean {
+    return Boolean(this.gameLoop);
+  }
+
+  /**
+   * 게임 루프의 실행 여부를 확인합니다.
+   * @returns {boolean} 게임 루프의 실행 여부
+   */
+  public get isRunning(): boolean {
+    return this.gameLoop?.isRunning || false;
+  }
+
+  /**
    * 새로운 게임 루프를 초기화합니다.
    * @param {HTMLCanvasElement} canvas - 게임 루프에 사용될 캔버스 엘리먼트
    * @param {number} fps - 게임 루프의 초당 프레임 수
