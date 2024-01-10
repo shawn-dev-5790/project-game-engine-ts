@@ -38,23 +38,27 @@ export default function App() {
         <p>game ready: {String(isReady)}</p>
         <p>game running: {String(isRunning)}</p>
         <p>gameloop updater: {updater}</p>
+        <p>
+          performance checker : {sessionStorage.getItem("performanceChecker")}
+        </p>
       </div>
       <main className="wrap">
         <canvas id="screen" width={500} height={500}></canvas>
         <div className="ui">
-          {isRunning ? (
+          {!isRunning && preloadPercent !== 100 && (
+            <button onClick={() => EventManager.emit("ready", null)}>
+              init
+            </button>
+          )}
+          {!isRunning && preloadPercent === 100 && (
+            <button onClick={() => EventManager.emit("start", null)}>
+              start
+            </button>
+          )}
+          {isRunning && (
             <button onClick={() => EventManager.emit("stop", null)}>
               stop
             </button>
-          ) : (
-            <>
-              <button onClick={() => EventManager.emit("ready", null)}>
-                init
-              </button>
-              <button onClick={() => EventManager.emit("start", null)}>
-                start
-              </button>
-            </>
           )}
         </div>
       </main>

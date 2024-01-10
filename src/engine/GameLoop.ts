@@ -1,4 +1,5 @@
 import Dummy from "../entity/Dummy";
+import { performanceChecker } from "../util/performanceChecker";
 import Renderer from "./Renderer";
 import Time from "./Time";
 import EventManager from "./manager/EventManager";
@@ -35,6 +36,7 @@ export default class GameLoop {
     // 게임 루프 중단
   }
 
+  @performanceChecker
   private loop(frame: number = 0) {
     if (!this.running) return;
 

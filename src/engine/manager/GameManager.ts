@@ -1,4 +1,5 @@
 import GameLoop from "../GameLoop";
+import AssetManager from "./AssetManager";
 
 /**
  * 게임 매니저 클래스입니다.
@@ -46,6 +47,7 @@ class GameManager {
    */
   public init(canvas: HTMLCanvasElement, fps: number, speed: number) {
     this.gameLoop = new GameLoop(canvas, fps, speed);
+    if (AssetManager.percentLoaded !== 100) AssetManager.init();
   }
 
   /**

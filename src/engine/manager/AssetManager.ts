@@ -12,14 +12,6 @@ class AssetManager {
   private sucLoadCnt: number = 0;
 
   /**
-   * 클래스 초기화를 위한 내부 메서드입니다.
-   * ASSETS에서 정의된 자원들을 비동기적으로 로드합니다.
-   */
-  private init(): void {
-    for (const asset of ASSETS) this.load(asset.name, asset.path);
-  }
-
-  /**
    * 요청된 자원 로드 횟수를 자동으로 증가시키는 내부 메서드입니다.
    */
   private autoIncrementReqLoadCnt(): void {
@@ -37,7 +29,13 @@ class AssetManager {
     if (AssetManager.instance) {
       throw new Error("싱글톤 클래스입니다. getInstance 메소드를 사용하세요");
     }
-    this.init();
+  }
+  /**
+   * 클래스 초기화를 위한 내부 메서드입니다.
+   * ASSETS에서 정의된 자원들을 비동기적으로 로드합니다.
+   */
+  public init(): void {
+    for (const asset of ASSETS) this.load(asset.name, asset.path);
   }
 
   /**
