@@ -5,10 +5,6 @@ import Sprite from "../engine/Sprite";
 import Vector2 from "../engine/Vector2";
 import asset from "../engine/manager/AssetManager";
 
-const entityDummyRigidbody = new Rigidbody(
-  new Vector2(0, 0),
-  new Vector2(1, 1)
-);
 const entityDummySpriteIdle = new Sprite(
   96,
   96,
@@ -21,7 +17,13 @@ const entityDummy = {
 };
 
 class Dummy extends AbsGameObject {
-  private rigidbody: Rigidbody = entityDummyRigidbody;
+  private rigidbody: Rigidbody = new Rigidbody(
+    new Vector2(
+      Math.floor(Math.random() * 100) + 1,
+      Math.floor(Math.random() * 100) + 1
+    ),
+    new Vector2(1, 1)
+  );
   private sprite_idle: Sprite = entityDummySpriteIdle;
 
   public update(delta: number): void {

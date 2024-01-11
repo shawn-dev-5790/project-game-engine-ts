@@ -12,7 +12,9 @@ class Rigidbody {
    * @param delta 경과 시간
    */
   updatePosition(delta: number): void {
-    this.position = this.position.add(this.velocity.multiplyScalar(delta));
+    this.position = this.position.add(
+      this.velocity.multiplyScalar(Number(delta.toFixed(0)))
+    );
   }
 
   /**

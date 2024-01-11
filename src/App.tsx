@@ -14,8 +14,8 @@ export default function App() {
     EventManager.on("ready", () => {
       if (game.isRunning) return;
       const canvas = document.getElementById("screen") as HTMLCanvasElement;
-      const fps = 60;
-      const speed = 20;
+      const fps = 30;
+      const speed = 30;
       game.init(canvas, fps, speed);
       setIsReady(game.isReady);
     });

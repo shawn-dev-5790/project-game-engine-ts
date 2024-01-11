@@ -16,7 +16,18 @@ export default class GameLoop {
     this.screen = new Renderer(canvas.getContext("2d")!);
     this.draw = new Time(fps, 1);
     this.calc = new Time(1, speed);
-    this.dummys = [new Dummy()];
+    this.dummys = Array.from({ length: 10 }, () => new Dummy());
+    // this.dummys = [
+    //   new Dummy(),
+    //   new Dummy(),
+    //   new Dummy(),
+    //   new Dummy(),
+    //   new Dummy(),
+    //   new Dummy(),
+    //   new Dummy(),
+    //   new Dummy(),
+    // ];
+    console.log(this.dummys);
   }
 
   public get isRunning() {

@@ -1,52 +1,257 @@
 [
   {
-    "images_warrior_attack_1": 0,
+    "images_kunoichi_attack_1": 0,
+    "name": "images_kunoichi_attack_1",
+    "path": "/images/kunoichi/attack_1.png"
+  },
+  {
+    "images_kunoichi_attack_2": 1,
+    "name": "images_kunoichi_attack_2",
+    "path": "/images/kunoichi/attack_2.png"
+  },
+  {
+    "images_kunoichi_cast": 2,
+    "name": "images_kunoichi_cast",
+    "path": "/images/kunoichi/cast.png"
+  },
+  {
+    "images_kunoichi_dead": 3,
+    "name": "images_kunoichi_dead",
+    "path": "/images/kunoichi/dead.png"
+  },
+  {
+    "images_kunoichi_eating": 4,
+    "name": "images_kunoichi_eating",
+    "path": "/images/kunoichi/eating.png"
+  },
+  {
+    "images_kunoichi_hurt": 5,
+    "name": "images_kunoichi_hurt",
+    "path": "/images/kunoichi/hurt.png"
+  },
+  {
+    "images_kunoichi_idle": 6,
+    "name": "images_kunoichi_idle",
+    "path": "/images/kunoichi/idle.png"
+  },
+  {
+    "images_kunoichi_jump": 7,
+    "name": "images_kunoichi_jump",
+    "path": "/images/kunoichi/jump.png"
+  },
+  {
+    "images_kunoichi_run": 8,
+    "name": "images_kunoichi_run",
+    "path": "/images/kunoichi/run.png"
+  },
+  {
+    "images_kunoichi_spine": 9,
+    "name": "images_kunoichi_spine",
+    "path": "/images/kunoichi/spine.png"
+  },
+  {
+    "images_kunoichi_walk": 10,
+    "name": "images_kunoichi_walk",
+    "path": "/images/kunoichi/walk.png"
+  },
+  {
+    "images_warrior_attack_1": 11,
     "name": "images_warrior_attack_1",
     "path": "/images/warrior/attack_1.png"
   },
   {
-    "images_warrior_attack_2": 1,
+    "images_warrior_attack_2": 12,
     "name": "images_warrior_attack_2",
     "path": "/images/warrior/attack_2.png"
   },
   {
-    "images_warrior_attack_3": 2,
+    "images_warrior_attack_3": 13,
     "name": "images_warrior_attack_3",
     "path": "/images/warrior/attack_3.png"
   },
   {
-    "images_warrior_dead": 3,
+    "images_warrior_dead": 14,
     "name": "images_warrior_dead",
     "path": "/images/warrior/dead.png"
   },
   {
-    "images_warrior_hurt": 4,
+    "images_warrior_hurt": 15,
     "name": "images_warrior_hurt",
     "path": "/images/warrior/hurt.png"
   },
   {
-    "images_warrior_idle": 5,
+    "images_warrior_idle": 16,
     "name": "images_warrior_idle",
     "path": "/images/warrior/idle.png"
   },
   {
-    "images_warrior_jump": 6,
+    "images_warrior_jump": 17,
     "name": "images_warrior_jump",
     "path": "/images/warrior/jump.png"
   },
   {
-    "images_warrior_run+attack": 7,
+    "images_warrior_run+attack": 18,
     "name": "images_warrior_run+attack",
     "path": "/images/warrior/run+attack.png"
   },
   {
-    "images_warrior_run": 8,
+    "images_warrior_run": 19,
     "name": "images_warrior_run",
     "path": "/images/warrior/run.png"
   },
   {
-    "images_warrior_walk": 9,
+    "images_warrior_walk": 20,
     "name": "images_warrior_walk",
     "path": "/images/warrior/walk.png"
+  },
+  {
+    "images_werewolf_black_werewolf_attack_1": 21,
+    "name": "images_werewolf_black_werewolf_attack_1",
+    "path": "/images/werewolf/black_werewolf/attack_1.png"
+  },
+  {
+    "images_werewolf_black_werewolf_attack_2": 22,
+    "name": "images_werewolf_black_werewolf_attack_2",
+    "path": "/images/werewolf/black_werewolf/attack_2.png"
+  },
+  {
+    "images_werewolf_black_werewolf_attack_3": 23,
+    "name": "images_werewolf_black_werewolf_attack_3",
+    "path": "/images/werewolf/black_werewolf/attack_3.png"
+  },
+  {
+    "images_werewolf_black_werewolf_dead": 24,
+    "name": "images_werewolf_black_werewolf_dead",
+    "path": "/images/werewolf/black_werewolf/dead.png"
+  },
+  {
+    "images_werewolf_black_werewolf_hurt": 25,
+    "name": "images_werewolf_black_werewolf_hurt",
+    "path": "/images/werewolf/black_werewolf/hurt.png"
+  },
+  {
+    "images_werewolf_black_werewolf_idle": 26,
+    "name": "images_werewolf_black_werewolf_idle",
+    "path": "/images/werewolf/black_werewolf/idle.png"
+  },
+  {
+    "images_werewolf_black_werewolf_jump": 27,
+    "name": "images_werewolf_black_werewolf_jump",
+    "path": "/images/werewolf/black_werewolf/jump.png"
+  },
+  {
+    "images_werewolf_black_werewolf_run+attack": 28,
+    "name": "images_werewolf_black_werewolf_run+attack",
+    "path": "/images/werewolf/black_werewolf/run+attack.png"
+  },
+  {
+    "images_werewolf_black_werewolf_run": 29,
+    "name": "images_werewolf_black_werewolf_run",
+    "path": "/images/werewolf/black_werewolf/run.png"
+  },
+  {
+    "images_werewolf_black_werewolf_walk": 30,
+    "name": "images_werewolf_black_werewolf_walk",
+    "path": "/images/werewolf/black_werewolf/walk.png"
+  },
+  {
+    "images_werewolf_red_werewolf_attack_1": 31,
+    "name": "images_werewolf_red_werewolf_attack_1",
+    "path": "/images/werewolf/red_werewolf/attack_1.png"
+  },
+  {
+    "images_werewolf_red_werewolf_attack_2": 32,
+    "name": "images_werewolf_red_werewolf_attack_2",
+    "path": "/images/werewolf/red_werewolf/attack_2.png"
+  },
+  {
+    "images_werewolf_red_werewolf_attack_3": 33,
+    "name": "images_werewolf_red_werewolf_attack_3",
+    "path": "/images/werewolf/red_werewolf/attack_3.png"
+  },
+  {
+    "images_werewolf_red_werewolf_dead": 34,
+    "name": "images_werewolf_red_werewolf_dead",
+    "path": "/images/werewolf/red_werewolf/dead.png"
+  },
+  {
+    "images_werewolf_red_werewolf_hurt": 35,
+    "name": "images_werewolf_red_werewolf_hurt",
+    "path": "/images/werewolf/red_werewolf/hurt.png"
+  },
+  {
+    "images_werewolf_red_werewolf_idle": 36,
+    "name": "images_werewolf_red_werewolf_idle",
+    "path": "/images/werewolf/red_werewolf/idle.png"
+  },
+  {
+    "images_werewolf_red_werewolf_jump": 37,
+    "name": "images_werewolf_red_werewolf_jump",
+    "path": "/images/werewolf/red_werewolf/jump.png"
+  },
+  {
+    "images_werewolf_red_werewolf_run+attack": 38,
+    "name": "images_werewolf_red_werewolf_run+attack",
+    "path": "/images/werewolf/red_werewolf/run+attack.png"
+  },
+  {
+    "images_werewolf_red_werewolf_run": 39,
+    "name": "images_werewolf_red_werewolf_run",
+    "path": "/images/werewolf/red_werewolf/run.png"
+  },
+  {
+    "images_werewolf_red_werewolf_walk": 40,
+    "name": "images_werewolf_red_werewolf_walk",
+    "path": "/images/werewolf/red_werewolf/walk.png"
+  },
+  {
+    "images_werewolf_white_werewolf_attack_1": 41,
+    "name": "images_werewolf_white_werewolf_attack_1",
+    "path": "/images/werewolf/white_werewolf/attack_1.png"
+  },
+  {
+    "images_werewolf_white_werewolf_attack_2": 42,
+    "name": "images_werewolf_white_werewolf_attack_2",
+    "path": "/images/werewolf/white_werewolf/attack_2.png"
+  },
+  {
+    "images_werewolf_white_werewolf_attack_3": 43,
+    "name": "images_werewolf_white_werewolf_attack_3",
+    "path": "/images/werewolf/white_werewolf/attack_3.png"
+  },
+  {
+    "images_werewolf_white_werewolf_dead": 44,
+    "name": "images_werewolf_white_werewolf_dead",
+    "path": "/images/werewolf/white_werewolf/dead.png"
+  },
+  {
+    "images_werewolf_white_werewolf_hurt": 45,
+    "name": "images_werewolf_white_werewolf_hurt",
+    "path": "/images/werewolf/white_werewolf/hurt.png"
+  },
+  {
+    "images_werewolf_white_werewolf_idle": 46,
+    "name": "images_werewolf_white_werewolf_idle",
+    "path": "/images/werewolf/white_werewolf/idle.png"
+  },
+  {
+    "images_werewolf_white_werewolf_jump": 47,
+    "name": "images_werewolf_white_werewolf_jump",
+    "path": "/images/werewolf/white_werewolf/jump.png"
+  },
+  {
+    "images_werewolf_white_werewolf_run+attack": 48,
+    "name": "images_werewolf_white_werewolf_run+attack",
+    "path": "/images/werewolf/white_werewolf/run+attack.png"
+  },
+  {
+    "images_werewolf_white_werewolf_run": 49,
+    "name": "images_werewolf_white_werewolf_run",
+    "path": "/images/werewolf/white_werewolf/run.png"
+  },
+  {
+    "images_werewolf_white_werewolf_walk": 50,
+    "name": "images_werewolf_white_werewolf_walk",
+    "path": "/images/werewolf/white_werewolf/walk.png"
   }
 ]
