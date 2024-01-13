@@ -28,6 +28,12 @@ export default function App() {
       setIsRunning(game.isRunning);
     });
     EventManager.on("watch", setUpdater);
+    EventManager.on("pointer", (e) => {
+      console.log({
+        x: e.screenX,
+        y: e.screenY,
+      });
+    });
   }, []);
 
   return (
@@ -42,7 +48,7 @@ export default function App() {
           performance checker : {sessionStorage.getItem("performanceChecker")}
         </p>
       </div>
-      <main className="wrap">
+      <main className="wrap" onClick={(e) => EventManager.emit("pointer", e)}>
         <canvas id="screen" width={500} height={500}></canvas>
         <div className="ui">
           {!isRunning && preloadPercent !== 100 && (

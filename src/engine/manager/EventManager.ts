@@ -4,6 +4,7 @@ enum EEventName {
   watch = "watch",
   start = "start",
   stop = "stop",
+  pointer = "pointer",
 }
 type TEventName = keyof typeof EEventName;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
